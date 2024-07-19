@@ -4,6 +4,17 @@ from datetime import timedelta, datetime
 import time
 import matplotlib.pyplot as plt
 
+def timing_decorator(func):
+        def wrapper(*args, **kwargs):
+            start_time = time.time()  
+            result = func(*args, **kwargs)  
+            end_time = time.time()  
+            execution_time = end_time - start_time  
+            print(f"Execution time of {func.__name__}: {execution_time:.4f} seconds")
+            return result, execution_time  
+        return wrapper
+
+
 @dataclass
 class OOPNET_Network_Simulation:
     inp_file: str
@@ -17,13 +28,11 @@ class OOPNET_Network_Simulation:
 
     def set_simulation_duration(self, duration_hours: int):
         self.network.times.duration = timedelta(seconds=duration_hours * 3600)
-     
+    
+    @timing_decorator  
     def get_results(self, only_qv: bool) -> float:
 
-        start_time = time.time() 
-
         if only_qv == True:
-
             self.network.report.nodes = 'NONE'
             self.network.links = 'NONE'
             self.network.reportparameter.quality = 'NO'
@@ -54,18 +63,11 @@ class OOPNET_Network_Simulation:
             self.network.reportparameter.headloss = 'YES'
             self.network.reportparameter.setting = 'YES'
             self.network.reportparameter.velocity ='YES'
-            self.network.reportparameter.flow ='YES'
-        
-       
-            
+            self.network.reportparameter.flow ='YES'              
 
-        report = self.network.run()
+        report = self.network.run()      
 
-        end_time = time.time()
-        computing_time = end_time - start_time
-        print(f"Simulation completed in {computing_time: .2f} seconds")
-
-        return report.flow, computing_time
+        return report.flow
 
 if __name__ == "__main__":
     
@@ -108,5 +110,5 @@ if __name__ == "__main__":
             va='top', 
             transform=plt.gca().transAxes)
         
-    plt.savefig('figures\one_period_simulation_oopnet.jpg')
+    plt.savefig('figures\One_period_simulation_oopnet.jpg')
     plt.close()
