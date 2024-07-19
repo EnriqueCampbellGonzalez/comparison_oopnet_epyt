@@ -1,0 +1,66 @@
+  Page 1                                    Fri Jul 19 14:55:35 2024
+
+  ******************************************************************
+  *                           E P A N E T                          *
+  *                   Hydraulic and Water Quality                  *
+  *                   Analysis for Pipe Networks                   *
+  *                         Version 2.2                            *
+  ******************************************************************
+  
+  Analysis begun Fri Jul 19 14:55:35 2024
+
+   
+  Hydraulic Status:
+  -----------------------------------------------------------------------
+     0:00:00: Balancing the network:
+
+              Trial  1: relative flow change = 2.797247
+              PRV PRV-1 switched from active to closed
+              PRV PRV-2 switched from active to closed
+              Trial  2: relative flow change = 0.933348
+              PRV PRV-1 switched from closed to active
+              PRV PRV-2 switched from closed to active
+              Trial  3: relative flow change = 0.646517
+              Trial  4: relative flow change = 0.350481
+              Trial  5: relative flow change = 0.114038
+              Trial  6: relative flow change = 0.026434
+              Trial  7: relative flow change = 0.003104
+                        maximum  flow change = 0.7431 for Link p227
+                        maximum  head error  = 0.0001 for Link p227
+
+     0:00:00: Balanced after 7 trials
+     0:00:00: Reservoir R1 is emptying
+     0:00:00: Reservoir R2 is emptying
+     0:00:00: Reservoir PSN410 is closed
+     0:00:00: Reservoir PSN429 is closed
+     0:00:00: Reservoir PSN115 is closed
+     0:00:00: Reservoir PSN298 is closed
+     0:00:00: Reservoir PSN54 is closed
+     0:00:00: Reservoir PSN105 is closed
+     0:00:00: Reservoir PSN114 is closed
+     0:00:00: Reservoir PSN163 is closed
+     0:00:00: Reservoir PSN188 is closed
+     0:00:00: Reservoir PSN215 is closed
+     0:00:00: Reservoir PSN229 is closed
+     0:00:00: Reservoir PSN288 is closed
+     0:00:00: Reservoir PSN296 is closed
+     0:00:00: Reservoir PSN332 is closed
+     0:00:00: Reservoir PSN342 is closed
+     0:00:00: Reservoir PSN415 is closed
+     0:00:00: Reservoir PSN458 is closed
+     0:00:00: Reservoir PSN469 is closed
+     0:00:00: Reservoir PSN495 is closed
+     0:00:00: Reservoir PSN506 is closed
+     0:00:00: Reservoir PSN516 is closed
+     0:00:00: Reservoir PSN519 is closed
+     0:00:00: Reservoir PSN549 is closed
+     0:00:00: Reservoir PSN613 is closed
+     0:00:00: Reservoir PSN636 is closed
+     0:00:00: Reservoir PSN644 is closed
+     0:00:00: Reservoir PSN679 is closed
+     0:00:00: Reservoir PSN722 is closed
+     0:00:00: Reservoir PSN726 is closed
+     0:00:00: Reservoir PSN740 is closed
+     0:00:00: Reservoir PSN752 is closed
+     0:00:00: Reservoir PSN769 is closed
+   
